@@ -63,3 +63,26 @@ específica (T2) y su categoría de sabor (T1).
    clic en **"Reconocer"**
 
 ##  Requisitos
+tensorflow
+kagglehub
+Pillow
+numpy
+matplotlib
+ipywidgets
+scikit-learn
+
+## Estructura del proyecto
+proyecto/
+│
+├── notebook.ipynb          ← código principal
+├── README.md               ← este archivo
+└── resultados/
+├── grafico_precision.png
+└── grafico_loss.png
+
+##  Limitaciones
+- El modelo funciona mejor con imágenes de fondo limpio
+- Fue entrenado con ~70 imágenes por clase — más datos mejorarían 
+  la precisión
+- El warning de `input_shape` en MobileNetV2 no afecta el 
+  funcionamiento — es solo un aviso de tamaño no estándar
